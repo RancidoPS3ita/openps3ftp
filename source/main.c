@@ -15,7 +15,7 @@
 
 #define FTPPORT		21	// port to start ftp server on
 #define BUFFER_SIZE	16384	// the default buffer size used in file transfers, in bytes
-#define LOGIN_CHECK	1	// 1 to enable, 0 to disable the login checking
+#define LOGIN_CHECK	0	// 1 to enable, 0 to disable the login checking
 
 // tested buffer values (smaller buffer size allows for more connections): 
 // <= 4096 - doesn't even connect
@@ -1275,10 +1275,10 @@ int main(int argc, const char* argv[])
 	sprintf(version, "Version %s", VERSION);
 	sprintf(status, "FTP active (%s:%i).", ipaddr, port);
 	
-	// check if dev_blind is mounted - if so, print warning
-	if(exists("/dev_blind") == 0)
+	// check if dev_fflash is mounted - if so, print warning
+	if(exists("/dev_fflash") == 0)
 	{
-		strcat(status, " WARNING: dev_blind mount detected - please be careful when accessing /dev_blind!");
+		strcat(status, " WARNING: dev_fflash mount detected - please be careful when accessing /dev_fflash!");
 	}
 	
 	init_screen();
