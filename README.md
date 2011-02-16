@@ -8,8 +8,11 @@ Source code available at [github](https://github.com/jjolano/openps3ftp).
 
 OpenPS3FTP was built using the PSL1GHT homebrew SDK.
 
-**Default login details:**  
-`Username: root` `Password: openbox`
+
+No Password & Username are required for the login.
+Check if /dev/fflash (FreeFlash) is mounted (not /dev/blind).
+-----------------
+
 
 Credit to PSL1GHT, geohot, and stoneMcClane for tools and code.
 
