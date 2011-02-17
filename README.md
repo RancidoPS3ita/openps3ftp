@@ -10,8 +10,7 @@ OpenPS3FTP was built using the PSL1GHT homebrew SDK.
 
 
 No Password & Username are required for the login.
-Check if /dev/fflash (FreeFlash) is mounted (not /dev/blind).
------------------
+Check if dev_fflash, dev_blind, dev_alejandro, dev_rwflash are mounted.
 
 
 Credit to PSL1GHT, geohot, and stoneMcClane for tools and code.
